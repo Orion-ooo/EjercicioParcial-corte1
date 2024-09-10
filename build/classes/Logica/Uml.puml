@@ -1,0 +1,57 @@
+@startuml
+abstract class Person {
+    # int cID;
+    # String name;
+    # String addres;
+    # String bankDetails;
+    # Date bornDate;
+    # String phone;
+}
+
+class Student {
+    - String motherName;
+    - String fatherName;
+    - Course course;
+    - List <Subject> studentSubjects;
+}
+
+class Teacher {
+    - String teacherCycle;
+    - int nIF;
+    - String qualificationOrSubjects;
+    - Subject subject;
+    - Cycle cycle;
+}
+
+class Cycle {
+    - List<Teacher> teacher;
+    - String name;
+    - String description;
+    - List<Course> course;
+}
+
+class Course {
+    - String levelName;
+    - List<Students> enrolledStudents;
+    - String group;
+    
+}
+
+class Subject {
+    - int id;
+    - String name;
+    - String description;
+    - String subject;
+}
+
+
+Teacher --|> Person : es un
+Student --|> Person : es un
+Cycle "1" -- "*" Course : contiene
+Course "*" -- "*" Teacher : tiene
+Course "1" -- "*" Student : pertenece
+Cycle "1" -- "*" Teacher : pertenece
+Student "*" -- "*" Subject : tiene
+
+
+@enduml
