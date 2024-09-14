@@ -6,14 +6,14 @@ public abstract class Person {
     protected int codigoID;
     protected String name;
     protected String addres;
-    protected String bankDetails;
+    protected BankDetails bankDetails;
     protected Date bornDate;
     protected String phone;
 
     public Person() {
     }
 
-    public Person(int codigoID, String name, String addres, String bankDetails, Date bornDate, String phone) {
+    public Person(int codigoID, String name, String addres, BankDetails bankDetails, Date bornDate, String phone) {
         this.codigoID = codigoID;
         this.name = name;
         this.addres = addres;
@@ -52,11 +52,11 @@ public abstract class Person {
         this.addres = addres;
     }
 
-    public String getBankDetails() {
+    public BankDetails getBankDetails() {
         return bankDetails;
     }
 
-    public void setBankDetails(String bankDetails) {
+    public void setBankDetails(BankDetails bankDetails) {
         this.bankDetails = bankDetails;
     }
 

@@ -11,14 +11,19 @@ public class Student extends Person {
     public Student() {
     }
 
-    public Student(String motherName, String fatherName, Cycle cycle, int cID, String name, String addres, String bankDetails, Date bornDate, String phone) {
+    public Student(String motherName, String fatherName, Cycle cycle, int cID, String name, String addres, BankDetails bankDetails, Date bornDate, String phone) {
         super(cID, name, addres, bankDetails, bornDate, phone);
         this.motherName = motherName;
         this.fatherName = fatherName;
         this.cycle = cycle;
     }
 
+    //Metodos
 
+    
+    
+    //Getters y Setters
+    
     public String getMotherName() {
         return motherName;
     }

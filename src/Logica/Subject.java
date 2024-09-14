@@ -1,6 +1,8 @@
 package Logica;
 
-public class Subject {
+import java.util.ArrayList;
+
+public class Subject implements InterfaceSubjectManagement{
     private int id;
     private String name;
     private String description;
@@ -15,6 +17,22 @@ public class Subject {
         this.description = description;
         this.subject = subject;
     }
+    
+    //Metodos
+    
+    @Override public void addSubject(Subject subject){
+        
+    }
+    
+    @Override public void removeSubject(Subject subject){
+        
+    }
+    
+    @Override public ArrayList<Subject> getAllSubjects(){
+        return null; //Por el momento
+    }
+    
+    //Getters y Setters
 
     public int getId() {
         return id;

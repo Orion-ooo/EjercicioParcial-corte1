@@ -6,34 +6,29 @@ import java.util.ArrayList;
 public class Cycle implements InterfaceCycleManagement{
     private String name;
     private String description;
-    private ArrayList<Course> course;
+    private ArrayList<Course> courses;
 
     public Cycle() {
     }
 
-    public Cycle(String name, String description, ArrayList<Course> course) {
+    public Cycle(String name, String description, ArrayList<Course> courses) {
         this.name = name;
         this.description = description;
-        this.course = course;
+        this.courses = courses;
     }
     
     //Metodos de Override
     
-    @Override
-    
-    public void addCourse(Course course){
+    @Override public void addCourse(Course course){
+        
+    }
+
+    @Override public void removeCourse(Course course){
         
     }
     
-    @Override
-    
-    public void removeCourse(Course course){
-        
-    }
-    
-    @Override
-    public ArrayList<Course> getCourses(){
-        return this.course;
+    @Override public ArrayList<Course> getCourses(){
+        return this.courses;
     }
     
     //Getters y Setters
@@ -55,11 +50,11 @@ public class Cycle implements InterfaceCycleManagement{
     }
 
     public ArrayList<Course> getCourse() {
-        return course;
+        return courses;
     }
 
-    public void setCourse(ArrayList<Course> course) {
-        this.course = course;
+    public void setCourse(ArrayList<Course> courses) {
+        this.courses = courses;
     }
     
 }

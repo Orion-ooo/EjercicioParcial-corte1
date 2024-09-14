@@ -12,7 +12,7 @@ public class Teacher extends Person{
     public Teacher() {
     }
 
-    public Teacher(String teacherCycle, int nIF, String qualification, Subject subject, Cycle cycle, int cID, String name, String addres, String bankDetails, Date bornDate, String phone) {
+    public Teacher(String teacherCycle, int nIF, String qualification, Subject subject, Cycle cycle, int cID, String name, String addres, BankDetails bankDetails, Date bornDate, String phone) {
         super(cID, name, addres, bankDetails, bornDate, phone);
         this.teacherCycle = teacherCycle;
         this.nIF = nIF;
